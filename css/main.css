@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #000011;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 36pt;
+}
+
+h3 {
+    font-size: 22pt;
+}
+
+p {
+    font-size: 12pt;
+}
+
+main {
+    background-color: #000011;
+}
+
+aside {
+    background-color: #000011;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #434da3;
+    border-radius: 10px;
+}
+
+nav li {
+    border: 2px solid #7984e6;
+    background-color: #434da3;
+    list-style-type: none;
+}
+
+nav li a {
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #7984e6;
+}
+
+.active {
+    background-color: #7984e6;
+}
+
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+table td, table th {
+    border: 0.5px solid #000011;
+}
+
+table tr:nth-child(even) {
+    background-color: #434da3;
+}
+
+table tr:hover {
+    background-color: black;
+}
+
+table th {
+    background-color: 7984e6;
+}
