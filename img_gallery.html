@@ -1,24 +1,29 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Star Trek Society</title>
-        <link rel='stylesheet' href='css/main.css'>
-    </head>
 
-    <body>
-        <header>
-            <h1>Star Trek Society</h1>
-        </header>
+<head>
+    <title>Star Trek Society</title>
+    <link rel='stylesheet' href='css/main.css'>
+</head>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
+        <h1 id="title">Star Trek Society</h1>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="left-col">
         <main>
             <div>
                 <img src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek">
@@ -31,9 +36,10 @@
             <div>
                 <img src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise">
             </div>
-            
+
             <div>
-                <img src="images/spock.png" alt="An image of the iconic Star Trek character spock doing the Vulcan salute">
+                <img src="images/spock.png"
+                    alt="An image of the iconic Star Trek character spock doing the Vulcan salute">
             </div>
 
             <div>
@@ -41,7 +47,8 @@
             </div>
 
             <div>
-                <img src="images/star_trek_logo.png" alt="An image of the most recent Starfleet badge with the heading 'Star Trek' on top">
+                <img src="images/star_trek_logo.png"
+                    alt="An image of the most recent Starfleet badge with the heading 'Star Trek' on top">
             </div>
 
             <div>
@@ -56,11 +63,19 @@
                 <img src="images/stfc.png" alt="An image of the cross-platform game Star Trek Fleet Command">
             </div>
         </main>
+    </div>
 
-        <aside> </aside>
+    <div id="right-col">
+        <aside>
+            <a class="twitter-timeline" data-height="900" data-theme="dark"
+                href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+    </div>
 
-        <footer>
-            <p>Copyright Jaron Frerichs</p>
-        </footer>
-    </body>
+    <footer>
+        <p>Copyright Jaron Frerichs</p>
+    </footer>
+</body>
+
 </html>

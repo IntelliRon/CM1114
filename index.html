@@ -1,38 +1,51 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Star Trek Society</title>
-        <link rel='stylesheet' href='css/main.css'>
-    </head>
 
-    <body>
-        <header>
-            <h1>Star Trek Society</h1>
-        </header>
+<head>
+    <title>Star Trek Society</title>
+    <link rel='stylesheet' href='css/main.css'>
+</head>
 
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
+        <h1 id="title">Star Trek Society</h1>
+    </header>
 
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="left-col">
         <main>
             <div>
                 <h3>Welcome</h3>
-                <p>Welcome to our homepage. Our society is about the various aspects of the Star Trek franchise, including television series, films, and books. 
-                    We often meet to watch Star Trek episodes and movies, discuss the latest Star Trek news, and play related computer games.</p>
+                <p>Welcome to our homepage. Our society is about the various aspects of the Star Trek franchise,
+                    including television series, films, and books.
+                    We often meet to watch Star Trek episodes and movies, discuss the latest Star Trek news, and play
+                    related computer games.</p>
             </div>
         </main>
+    </div>
 
+    <div id="right-col">
         <aside>
-            <h3>Latest Tweets</h3>
+            <a class="twitter-timeline" data-height="900" data-theme="dark"
+                href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </aside>
+    </div>
 
-        <footer>
-            <p>Copyright Jaron Frerichs</p>
-        </footer>
-    </body>
+    <footer>
+        <p>Copyright Jaron Frerichs</p>
+    </footer>
+</body>
+
 </html>
