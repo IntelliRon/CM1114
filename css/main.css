@@ -54,6 +54,7 @@ nav li {
     float: left;
     width: 18%;
     padding: 16px;
+    text-decoration: none;
 }
 
 nav ul a {
