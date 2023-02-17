@@ -104,6 +104,10 @@ div img {
     height: 200px;
 }
 
+form label, form legend {
+    color: white;
+}
+
 
 
 
