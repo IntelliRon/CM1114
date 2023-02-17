@@ -56,7 +56,7 @@ nav li {
     padding: 16px;
 }
 
-nav li a {
+nav ul a {
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
@@ -96,6 +96,13 @@ header, nav, main, aside, footer {
     padding: 10px;
 }
 
+div img {
+    display: inline;
+    width: 30%;
+    object-fit: cover;
+    height: 200px;
+}
+
 
 
 
@@ -107,6 +114,8 @@ header, nav, main, aside, footer {
     margin: auto;
     margin-right: 10px;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #title {
@@ -124,4 +133,13 @@ header, nav, main, aside, footer {
 #right-col {
     width: 20%;
     float: right;
+}
+
+#gallery {
+    display: inline-block;
+}
+
+#gallery div {
+    display: inline;
+    width: 30%;
 }
