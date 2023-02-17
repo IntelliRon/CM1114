@@ -51,10 +51,9 @@ nav li {
     border: 2px solid #2c2c2c;
     background-color: #525252;
     list-style-type: none;
-    float: left;
-    width: 18%;
     padding: 16px;
     text-decoration: none;
+    width: 100%;
 }
 
 nav ul a {
@@ -99,7 +98,7 @@ header, nav, main, aside, footer {
 
 div img {
     display: inline;
-    width: 33%;
+    width: 49%;
     object-fit: cover;
     height: 200px;
 }
@@ -129,22 +128,42 @@ form label, form legend {
     vertical-align: middle;
 }
 
-#left-col {
-    width: 79%;
-    float: left;
-    margin-right: 1%;
-}
-
-#right-col {
-    width: 20%;
-    float: right;
-}
-
 #gallery {
     display: inline-block;
 }
 
+#right-col {
+    margin-top: 1%;
+}
+
 #gallery div {
     display: inline;
-    width: 33%;
+    width: 49%;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    #left-col {
+        width: 79%;
+        float: left;
+    }
+
+    #right-col {
+        float: right;
+        margin-top: 0;
+        width: 18%;
+        min-width: 300px;
+    }
+    
+    nav li {
+        float: left;
+        width: 18%;
+    }
+
+    #gallery div, div img {
+        width: 32%;
+    }
+
+
 }
