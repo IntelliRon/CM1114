@@ -212,4 +212,11 @@ form label, form legend {
     #imgViewerImg {
         min-height: 300px;
     }
+
+    #imageCarouselImg {
+        object-fit: cover;
+        width: 90%;
+        margin: auto;
+        height: 500px;
+    }
 }
