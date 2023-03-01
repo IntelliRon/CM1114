@@ -171,6 +171,11 @@ form label, form legend {
     font-size: 20px;
 }
 
+#imgViewerImg {
+    max-width: 95vw;
+    max-height: 95vh;
+}
+
 
 
 /* Media dependent modifiers */
@@ -201,5 +206,9 @@ form label, form legend {
     #gallery div:hover, #gallery div img:hover {
         width: calc(32% + 5px);
         height: 205px;
+    }
+
+    #imgViewerImg {
+        min-height: 300px;
     }
 }
