@@ -4,7 +4,9 @@
 
 <head>
     <title>Star Trek Society</title>
+
     <link rel='stylesheet' href='css/main.css'>
+    <script src="scripts/gallery.js"></script>
 
     <meta charset="UTF-8">
     <meta name="description" content="A website about a (fictional) Star Trek University Society at RGU.">
@@ -14,6 +16,13 @@
 </head>
 
 <body>
+    <!-- Overlay to view full images -->
+    <div id="imgViewer">
+        <button type="button" id="imgViewerButton" onclick="hideFullImage()">X</button><br>
+
+        <img id="imgViewerImg" src="images/logo.png" style="min-height: 300px;">
+    </div>
+
     <header>
         <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
         <h1 id="title">Star Trek Society</h1>
@@ -42,41 +51,39 @@
     <div id="left-col">
         <main id="gallery">
             <div>
-                <img src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek">
+                <img src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek" onclick="viewImage('images/enterprise_ncc1701.png')">
             </div>
 
             <div>
-                <img src="images/main_characters.png" alt="An image of main characters from several Star Trek series">
+                <img src="images/main_characters.png" alt="An image of main characters from several Star Trek series" onclick="viewImage('images/main_characters.png')">
             </div>
 
             <div>
-                <img src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise">
+                <img src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise" onclick="viewImage('images/NX-01.png')">
             </div>
 
             <div>
-                <img src="images/spock.png"
-                    alt="An image of the iconic Star Trek character spock doing the Vulcan salute">
+                <img src="images/spock.png" alt="An image of the iconic Star Trek character spock doing the Vulcan salute" onclick="viewImage('images/spock.png')">
             </div>
 
             <div>
-                <img src="images/star_trek_convention.png" alt="An image of the official Star Trek convention">
+                <img src="images/star_trek_convention.png" alt="An image of the official Star Trek convention" onclick="viewImage('images/star_trek_convention.png')">
             </div>
 
             <div>
-                <img src="images/star_trek_logo.png"
-                    alt="An image of the most recent Starfleet badge with the heading 'Star Trek' on top">
+                <img src="images/star_trek_logo.png" alt="An image of the most recent Starfleet badge with the heading 'Star Trek' on top" onclick="viewImage('images/star_trek_logo.png')">
             </div>
 
             <div>
-                <img src="images/star_trek_lower_decks.png" alt="A cover image of the series Star Trek: Lower Decks">
+                <img src="images/star_trek_lower_decks.png" alt="A cover image of the series Star Trek: Lower Decks" onclick="viewImage('images/star_trek_lower_decks.png')">
             </div>
 
             <div>
-                <img src="images/star_trek_picard.png" alt="A cover image of the series Star Trek: Picard">
+                <img src="images/star_trek_picard.png" alt="A cover image of the series Star Trek: Picard" onclick="viewImage('images/star_trek_picard.png')">
             </div>
 
             <div>
-                <img src="images/stfc.png" alt="An image of the cross-platform game Star Trek Fleet Command">
+                <img src="images/stfc.png" alt="An image of the cross-platform game Star Trek Fleet Command" onclick="viewImage('images/stfc.png')">
             </div>
         </main>
     </div>
@@ -90,7 +97,7 @@
     </div>
 
     <footer>
-        <p>Copyright Jaron Frerichs</p>
+        <p>&copy; Jaron Frerichs</p>
     </footer>
 </body>
 

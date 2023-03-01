@@ -1,3 +1,5 @@
+/* Tags modifiers */
+
 body {
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +44,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 nav li {
@@ -51,6 +54,7 @@ nav li {
     padding: 16px;
     text-decoration: none;
     width: 100%;
+    overflow: clip;
 }
 
 nav ul a {
@@ -93,13 +97,6 @@ header, nav, main, aside, footer {
     padding: 10px;
 }
 
-div img {
-    display: inline;
-    width: 49%;
-    object-fit: cover;
-    height: 200px;
-}
-
 form label, form legend {
     color: white;
 }
@@ -107,7 +104,7 @@ form label, form legend {
 
 
 
-/* ID Tags */
+/* ID modifiers */
 #logo {
     width: 50px;
     height: 50px;
@@ -138,9 +135,53 @@ form label, form legend {
     width: 49%;
 }
 
+#gallery img {
+    cursor: pointer;
+    display: inline;
+    width: 49%;
+    object-fit: cover;
+    height: 200px;
+}
 
+#gallery div:hover, #gallery div img:hover {
+    width: calc(49% + 5px);
+    height: 205px;
+}
+
+/* Hide gallery image viewer by default */
+#imgViewer {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6e6e6e;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#imgViewerButton {
+    position: relative;
+    left: calc(100% - 30px);
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+}
+
+
+
+/* Media dependent modifiers */
 
 @media screen and (min-width: 800px) {
+    nav li {
+        float: left;
+        width: initial;
+        min-width: 140px;
+    }
+
     #left-col {
         width: 74%;
         float: left;
@@ -152,15 +193,13 @@ form label, form legend {
         width: 25%;
         min-width: 300px;
     }
-    
-    nav li {
-        float: left;
-        width: 18%;
-    }
 
-    #gallery div, div img {
+    #gallery div, #gallery div img {
         width: 32%;
     }
 
-
+    #gallery div:hover, #gallery div img:hover {
+        width: calc(32% + 5px);
+        height: 205px;
+    }
 }
