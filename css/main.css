@@ -142,11 +142,20 @@ form label, form legend {
     width: 49%;
     object-fit: cover;
     height: 200px;
+    transition: 0.4s ease-in-out;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #gallery div:hover, #gallery div img:hover {
-    width: calc(49% + 5px);
-    height: 205px;
+    width: calc(48% + 10px);
+    height: 210px;
+}
+
+#gallery div img:hover {
+    margin-right: 0;
+    margin-bottom: 0;
+    transition: 0.4s ease-in-out;
 }
 
 /* Hide gallery image viewer by default */
@@ -201,12 +210,24 @@ form label, form legend {
     }
 
     #gallery div, #gallery div img {
-        width: 32%;
+        width: 30%;
+    }
+
+    #gallery div img {
+        transition: 0.4s ease-in-out;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     #gallery div:hover, #gallery div img:hover {
-        width: calc(32% + 5px);
-        height: 205px;
+        width: calc(30% + 10px);
+        height: 210px;
+    }
+
+    #gallery div img:hover {
+        margin-right: 0;
+        margin-bottom: 0;
+        transition: 0.4s ease-in-out;
     }
 
     #imgViewerImg {
