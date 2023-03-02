@@ -100,6 +100,21 @@ header, nav, main, aside, footer {
 
 form label, form legend {
     color: white;
+    vertical-align: top;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    background: #2c2c2c;
+    color: white;
+    border-radius: 5px;
+}
+
+input::file-selector-button, button[type="submit"] {
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 
 
@@ -133,29 +148,15 @@ form label, form legend {
 
 #gallery div {
     display: inline;
-    width: 49%;
+    width: 48%;
 }
 
 #gallery img {
     cursor: pointer;
     display: inline;
-    width: 49%;
+    width: 48%;
     object-fit: cover;
     height: 200px;
-    transition: 0.4s ease-in-out;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-#gallery div:hover, #gallery div img:hover {
-    width: calc(48% + 10px);
-    height: 210px;
-}
-
-#gallery div img:hover {
-    margin-right: 0;
-    margin-bottom: 0;
-    transition: 0.4s ease-in-out;
 }
 
 /* Hide gallery image viewer by default */
@@ -168,12 +169,13 @@ form label, form legend {
     background-color: #6e6e6e;
     border-radius: 5px;
     padding: 10px;
+    max-height: 90vh;
 }
 
 #imgViewerButton {
     position: relative;
     left: calc(100% - 30px);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -183,7 +185,7 @@ form label, form legend {
 
 #imgViewerImg {
     max-width: 95vw;
-    max-height: 95vh;
+    max-height: 80vh;
 }
 
 

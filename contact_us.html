@@ -4,7 +4,9 @@
 
 <head>
     <title>Star Trek Society</title>
+    
     <link rel='stylesheet' href='css/main.css'>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <meta charset="UTF-8">
     <meta name="description" content="A website about a (fictional) Star Trek University Society at RGU.">
@@ -45,23 +47,25 @@
                 <form>
                     <fieldset>
                         <legend>Contact Us using the below form.</legend>
+                        Please fill all fields marked with a *<br />
 
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value="" placeholder="John Doe" /> <br />
+                        <label for="name">Name: *</label>
+                        <input type="text" name="name" value="" placeholder="John Doe" required /> <br />
 
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" value="" placeholder="john.doe@example.com" /> <br />
+                        <label for="email">Email: *</label>
+                        <input type="email" name="email" value="" placeholder="john.doe@example.com" required /> <br />
 
-                        <label for="membership">Membership Status:</label>
-                        <input type="radio" name="membership" value="Member">Member
-                        <input type="radio" name="membership" value="Non-Member">Non-Member<br />
+                        <label for="membership">Membership Status: *</label>
+                        <input type="radio" name="membership" value="Member" required>Member
+                        <input type="radio" name="membership" value="Non-Member" required>Non-Member<br />
 
-                        <label for="message">Comments: </label>
-                        <textarea name="message" value="" placeholder="Please enter your message here..." rows="4"
-                            cols="50"></textarea><br />
+                        <label for="message">Comments: *</label>
+                        <textarea name="message" value="" placeholder="Please enter your message here..." rows="4" cols="35" required></textarea><br />
 
-                        <label for="attachment">Attachments:</label>
-                        <input type="file" name="attachment" value="">
+                        <label for="attachment">Attachments: </label>
+                        <input type="file" name="attachment" value=""><br />
+
+                        <button type="submit" style="float: right;">Send</button>
                     </fieldset>
                 </form>
             </div>
