@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #6e6e6e;
+    background-color: hsl(0, 0%, 43%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
@@ -27,11 +27,14 @@ p {
 
 main {
     background-color: #6e6e6e;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 aside {
     background-color: #6e6e6e;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -42,9 +45,11 @@ footer {
 
 nav ul {
     margin: 0;
-    padding: 0;
+    padding: 0 5px;
     overflow: hidden;
     width: 100%;
+    background-color: #2c2c2c;
+    border-radius: 10px;
 }
 
 nav li {
@@ -55,6 +60,7 @@ nav li {
     text-decoration: none;
     width: 100%;
     overflow: clip;
+    border-radius: 10px;
 }
 
 nav ul a {
@@ -188,15 +194,58 @@ input::file-selector-button, button[type="submit"] {
     max-height: 80vh;
 }
 
+#imgViewerImg {
+    min-height: 300px;
+}
+
+#imageCarouselImg {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    height: 500px;
+}
+
 
 
 /* Media dependent modifiers */
+@media screen and (min-width:1100px) and (max-width: 1200px) {
+    #left-col {
+        width: 60% !important;
+    }
+
+    #right-col {
+        width: 39% !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #left-col {
+        clear: both !important;
+        width: 100% !important;
+    }
+
+    #right-col {
+        clear: both !important;
+        width: 100% !important;
+    }
+}
+
 
 @media screen and (min-width: 800px) {
+    nav ul {
+        display: inline-block;
+        width: initial;
+    }
+
+    nav {
+        width: initial;
+    }
+
     nav li {
         float: left;
         width: initial;
         min-width: 140px;
+        max-width: 20%;
     }
 
     #left-col {
@@ -230,17 +279,6 @@ input::file-selector-button, button[type="submit"] {
         margin-right: 0;
         margin-bottom: 0;
         transition: 0.4s ease-in-out;
-    }
-
-    #imgViewerImg {
-        min-height: 300px;
-    }
-
-    #imageCarouselImg {
-        object-fit: cover;
-        width: 90%;
-        margin: auto;
-        height: 500px;
     }
 }
 
