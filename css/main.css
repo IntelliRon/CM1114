@@ -14,15 +14,15 @@ header {
 }
 
 h1 {
-    font-size: 36pt;
+    font-size: 40pt;
 }
 
 h3 {
-    font-size: 22pt;
+    font-size: 24pt;
 }
 
-p {
-    font-size: 12pt;
+p, label, input, form {
+    font-size: 16pt;
 }
 
 main {

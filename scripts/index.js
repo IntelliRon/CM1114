@@ -13,6 +13,7 @@ let availableImages = [
 ];
 let currentImageIndex = 0;
 
+// Image carousel
 setInterval(() => {
     currentImageIndex++;
     if (currentImageIndex >= availableImages.length) currentImageIndex = 0;
