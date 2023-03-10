@@ -198,7 +198,7 @@ input::file-selector-button, button[type="submit"] {
     min-height: 300px;
 }
 
-#imageCarouselImg {
+.imageCarouselImg {
     object-fit: cover;
     width: 100%;
     margin: auto;
@@ -244,8 +244,8 @@ input::file-selector-button, button[type="submit"] {
     nav li {
         float: left;
         width: initial;
-        min-width: 140px;
         max-width: 20%;
+        min-width: 140px;
     }
 
     #left-col {

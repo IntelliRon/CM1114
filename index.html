@@ -4,7 +4,12 @@
 
 <head>
     <title>Star Trek Society</title>
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <link rel='stylesheet' href='css/main.css'>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -15,14 +20,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-    <header>
+<body style="padding: 10px;">
+    <header style="margin-bottom: 10px;">
         <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
         <h1 id="title">Star Trek Society</h1>
     </header>
 
-    <nav>
-        <ul>
+    <nav style="width: 100%;">
+        <ul style="padding: 0;">
             <a href="index.html">
                 <li class="active">Home</li>
             </a>
@@ -42,7 +47,7 @@
     </nav>
 
     <div id="left-col">
-        <main>
+        <main style="margin-bottom: 10px;">
             <div>
                 <h3>Welcome</h3>
                 <p>Welcome to our homepage. Our society is about the various aspects of the Star Trek franchise,
@@ -51,27 +56,59 @@
                     related computer games.</p>
             </div>
 
-            <div id="imageCarousel">
-                <img src="images/enterprise_ncc1701.png" id="imageCarouselImg">
+            <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img class="d-block w-100 imageCarouselImg" src="images/enterprise_ncc1701.png">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                              <p>The NCC1701 is the Enterprise in the original series</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100 imageCarouselImg" src="images/NX-01.png">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100 imageCarouselImg" src="images/star_trek_convention.png">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#home-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+
         </main>
     </div>
 
     <div id="right-col">
-        <aside>
+        <aside style="margin-bottom: 10px;">
             <a class="twitter-timeline" data-height="700" data-theme="dark"
                 href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </aside>
     </div>
 
-    <footer>
+    <footer style="margin-bottom: 10px;">
         <p>&copy; Jaron Frerichs</p>
     </footer>
 
     <!-- Script only loads at the end as it immediately starts running as soon as the page loads -->
-    <script src="scripts/index.js"></script>
-    
+    <!--script src="scripts/index.js"></script-->
+
 </body>
 
 </html>
