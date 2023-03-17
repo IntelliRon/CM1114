@@ -18,12 +18,32 @@
     <meta name="keywords" content="Star Trek, University, RGU">
     <meta name="author" content="Jaron Frerichs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        var counter = 0;
+
+        function login() {
+            if (counter % 2 == 0) {
+                alert('You have been logged in!');
+            } else {
+                alert('You have been logged out!');
+            }
+            counter += 1;
+        }
+    </script>
+        
 </head>
 
 <body style="padding: 10px;">
     <header style="margin-bottom: 10px;">
         <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
-        <h1 id="title">Star Trek Society</h1>
+        <h1 id="title" style="display: inline">Star Trek Society</h1>
+
+        <form onsubmit="return false;" style="display: inline; float: right">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="password">
+            <button type="submit" id="loginButton" onclick="login()">Login</button>
+        </form>
     </header>
 
     <nav style="width: 100%;">
@@ -105,10 +125,6 @@
     <footer style="margin-bottom: 10px;">
         <p>&copy; Jaron Frerichs</p>
     </footer>
-
-    <!-- Script only loads at the end as it immediately starts running as soon as the page loads -->
-    <!--script src="scripts/index.js"></script-->
-
 </body>
 
 </html>

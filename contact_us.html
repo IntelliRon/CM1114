@@ -18,6 +18,12 @@
     <meta name="keywords" content="Star Trek, University, RGU">
     <meta name="author" content="Jaron Frerichs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function send_form() {
+            document.getElementById('form_outcome').innerHTML = 'Form has been sent successfully!';
+        }
+    </script>
 </head>
 
 <body>
@@ -70,9 +76,13 @@
                         <label for="attachment">Attachments: </label>
                         <input type="file" name="attachment" value=""><br />
 
-                        <button type="submit" style="float: right;">Send</button>
+                        <button type="submit" style="float: right;" onclick="send_form()">Send</button>
                     </fieldset>
                 </form>
+            </div>
+
+            <div>
+                <p id="form_outcome"></p>
             </div>
         </main>
     </div>

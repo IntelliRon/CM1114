@@ -109,7 +109,7 @@ form label, form legend {
     vertical-align: top;
 }
 
-form input[type="text"], form input[type="email"], form textarea {
+form input[type="text"], form input[type="email"], form input[type="password"], form textarea {
     background: #2c2c2c;
     color: white;
     border-radius: 5px;
@@ -120,7 +120,7 @@ input::file-selector-button, button[type="submit"] {
     background-color: #2c2c2c;
     color: white;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 3px 5px;
 }
 
 

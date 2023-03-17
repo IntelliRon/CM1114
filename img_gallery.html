@@ -12,7 +12,6 @@
         crossorigin="anonymous"></script>
     <link rel='stylesheet' href='css/main.css'>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <script src="scripts/gallery.js"></script>
 
     <meta charset="UTF-8">
     <meta name="description" content="A website about a (fictional) Star Trek University Society at RGU.">
@@ -23,118 +22,122 @@
 
 <body>
     <!-- Overlay to view full images -->
-    <div id="imgViewer">
+    <div id="imgViewer" style="display: none">
         <button type="button" id="imgViewerButton" onclick="hideFullImage()">X</button><br>
 
         <img id="imgViewerImg" src="images/logo.png">
     </div>
 
-    <header>
-        <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
-        <h1 id="title">Star Trek Society</h1>
-    </header>
+    <div id="content">
+        <header>
+            <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
+            <h1 id="title">Star Trek Society</h1>
+        </header>
 
-    <nav>
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="img_gallery.html">
-                <li class="active">Gallery</li>
-            </a>
-            <a href="current_members.html">
-                <li>Current Members</li>
-            </a>
-            <a href="event_calendar.html">
-                <li>Events</li>
-            </a>
-            <a href="contact_us.html">
-                <li>Contact Us</li>
-            </a>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="img_gallery.html">
+                    <li class="active">Gallery</li>
+                </a>
+                <a href="current_members.html">
+                    <li>Current Members</li>
+                </a>
+                <a href="event_calendar.html">
+                    <li>Events</li>
+                </a>
+                <a href="contact_us.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
 
-    <div id="left-col">
-        <main id="gallery">
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek"
-                        onclick="viewImage('images/enterprise_ncc1701.png')">
+        <div id="left-col">
+            <main id="gallery">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek"
+                            onclick="viewImage('images/enterprise_ncc1701.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/main_characters.png"
-                        alt="An image of main characters from several Star Trek series"
-                        onclick="viewImage('images/main_characters.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/main_characters.png"
+                            alt="An image of main characters from several Star Trek series"
+                            onclick="viewImage('images/main_characters.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise"
-                        onclick="viewImage('images/NX-01.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise"
+                            onclick="viewImage('images/NX-01.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/spock.png"
-                        alt="An image of the iconic Star Trek character spock doing the Vulcan salute"
-                        onclick="viewImage('images/spock.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/spock.png"
+                            alt="An image of the iconic Star Trek character spock doing the Vulcan salute"
+                            onclick="viewImage('images/spock.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/star_trek_convention.png" alt="An image of the official Star Trek convention"
-                        onclick="viewImage('images/star_trek_convention.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/star_trek_convention.png" alt="An image of the official Star Trek convention"
+                            onclick="viewImage('images/star_trek_convention.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/star_trek_logo.png"
-                        alt="An image of the most recent Starfleet badge with the heading 'Star Trek' on top"
-                        onclick="viewImage('images/star_trek_logo.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/star_trek_logo.png"
+                            alt="An image of the most recent Starfleet badge with the heading 'Star Trek' on top"
+                            onclick="viewImage('images/star_trek_logo.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/star_trek_lower_decks.png" alt="A cover image of the series Star Trek: Lower Decks"
-                        onclick="viewImage('images/star_trek_lower_decks.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/star_trek_lower_decks.png" alt="A cover image of the series Star Trek: Lower Decks"
+                            onclick="viewImage('images/star_trek_lower_decks.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/star_trek_picard.png" alt="A cover image of the series Star Trek: Picard"
-                        onclick="viewImage('images/star_trek_picard.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/star_trek_picard.png" alt="A cover image of the series Star Trek: Picard"
+                            onclick="viewImage('images/star_trek_picard.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <img src="images/stfc.png" alt="An image of the cross-platform game Star Trek Fleet Command"
-                        onclick="viewImage('images/stfc.png')">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/stfc.png" alt="An image of the cross-platform game Star Trek Fleet Command"
+                            onclick="viewImage('images/stfc.png')" class="galleryImg">
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
+
+        <div id="right-col">
+            <aside>
+                <a class="twitter-timeline" data-height="900" data-theme="dark"
+                    href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy; Jaron Frerichs</p>
+        </footer>
+
+        <script src="scripts/gallery.js"></script>
     </div>
-
-    <div id="right-col">
-        <aside>
-            <a class="twitter-timeline" data-height="900" data-theme="dark"
-                href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </aside>
-    </div>
-
-    <footer>
-        <p>&copy; Jaron Frerichs</p>
-    </footer>
 </body>
 
 </html>
