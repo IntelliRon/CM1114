@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>Star Trek Society</title>
@@ -25,40 +25,36 @@
     <div id="imgViewer" style="display: none">
         <button type="button" id="imgViewerButton" onclick="hideFullImage()">X</button><br>
 
-        <img id="imgViewerImg" src="images/logo.png">
+        <img id="imgViewerImg" src="images/logo.png"  alt="Image viewer">
     </div>
 
     <div id="content">
+        <!-- Logo image and webpage title -->
         <header>
             <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
             <h1 id="title">Star Trek Society</h1>
         </header>
 
-        <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="img_gallery.html">
-                    <li class="active">Gallery</li>
-                </a>
-                <a href="current_members.html">
-                    <li>Current Members</li>
-                </a>
-                <a href="event_calendar.html">
-                    <li>Events</li>
-                </a>
-                <a href="contact_us.html">
-                    <li>Contact Us</li>
-                </a>
+        <!-- Navigation bar -->
+        <nav style="width: 100%;">
+            <ul style="padding: 0;">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="event_calendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="ad_site.html">Shop</a></li>
             </ul>
         </nav>
 
+        <!-- Main content (pushed to left on >800px screens) -->
         <div id="left-col">
+            <!-- Image gallery -->
             <main id="gallery">
                 <div class="row">
                     <div class="col-sm">
-                        <img tabindex="0" src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek"
+                        <img tabindex="0" src="images/enterprise_ncc1701.png"
+                            alt="An image of the Enterprise NCC-1701 from Star Trek"
                             onclick="viewImage('images/enterprise_ncc1701.png')" class="galleryImg">
                     </div>
                 </div>
@@ -73,7 +69,8 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <img tabindex="0" src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise"
+                        <img tabindex="0" src="images/NX-01.png"
+                            alt="An image of the Enterprise NX-01 from Star Trek: Enterprise"
                             onclick="viewImage('images/NX-01.png')" class="galleryImg">
                     </div>
                 </div>
@@ -88,7 +85,8 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <img tabindex="0" src="images/star_trek_convention.png" alt="An image of the official Star Trek convention"
+                        <img tabindex="0" src="images/star_trek_convention.png"
+                            alt="An image of the official Star Trek convention"
                             onclick="viewImage('images/star_trek_convention.png')" class="galleryImg">
                     </div>
                 </div>
@@ -103,32 +101,36 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <img tabindex="0" src="images/star_trek_lower_decks.png" alt="A cover image of the series Star Trek: Lower Decks"
+                        <img tabindex="0" src="images/star_trek_lower_decks.png"
+                            alt="A cover image of the series Star Trek: Lower Decks"
                             onclick="viewImage('images/star_trek_lower_decks.png')" class="galleryImg">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm">
-                        <img tabindex="0" src="images/star_trek_picard.png" alt="A cover image of the series Star Trek: Picard"
+                        <img tabindex="0" src="images/star_trek_picard.png"
+                            alt="A cover image of the series Star Trek: Picard"
                             onclick="viewImage('images/star_trek_picard.png')" class="galleryImg">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm">
-                        <img tabindex="0" src="images/stfc.png" alt="An image of the cross-platform game Star Trek Fleet Command"
+                        <img tabindex="0" src="images/stfc.png"
+                            alt="An image of the cross-platform game Star Trek Fleet Command"
                             onclick="viewImage('images/stfc.png')" class="galleryImg">
                     </div>
                 </div>
             </main>
         </div>
 
+        <!-- Twitter feed (pushed to right on >800px screens) -->
         <div id="right-col">
             <aside>
                 <a class="twitter-timeline" data-height="900" data-theme="dark"
                     href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async src="https://platform.twitter.com/widgets.js"></script>
             </aside>
         </div>
 

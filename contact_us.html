@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>Star Trek Society</title>
@@ -27,54 +27,51 @@
 </head>
 
 <body>
+    <!-- Logo image and webpage title -->
     <header>
         <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
         <h1 id="title">Star Trek Society</h1>
     </header>
 
-    <nav>
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="img_gallery.html">
-                <li>Gallery</li>
-            </a>
-            <a href="current_members.html">
-                <li>Current Members</li>
-            </a>
-            <a href="event_calendar.html">
-                <li>Events</li>
-            </a>
-            <a href="contact_us.html">
-                <li class="active">Contact Us</li>
-            </a>
+    <!-- Navigation bar -->
+    <nav style="width: 100%;">
+        <ul style="padding: 0;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li class="active"><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="ad_site.html">Shop</a></li>
         </ul>
     </nav>
 
+    <!-- Main content (pushed to left on >800px screens) -->
     <div id="left-col">
         <main>
             <div>
+                <!-- Contact form -->
                 <form>
                     <fieldset>
                         <legend>Contact Us using the below form.</legend>
-                        Please fill all fields marked with a *<br />
+                        Please fill all fields marked with a *<br>
 
                         <label for="name">Name: *</label>
-                        <input type="text" name="name" id="name" value="" placeholder="John Doe" required /> <br />
+                        <input type="text" name="name" id="name" value="" placeholder="John Doe" required> <br>
 
                         <label for="email">Email: *</label>
-                        <input type="email" name="email" id="email" value="" placeholder="john.doe@example.com" required /> <br />
+                        <input type="email" name="email" id="email" value="" placeholder="john.doe@example.com" required> <br>
 
-                        <label for="membership">Membership Status: *</label>
-                        <input type="radio" name="membership" value="Member" required>Member
-                        <input type="radio" name="membership" value="Non-Member" required>Non-Member<br />
+                        <span>Membership Status: *</span>
+                        <input type="radio" name="membership" id="member" value="Member" required>
+                        <label for="member">Member</label>
+                        <input type="radio" name="membership" value="Non-Member" required>
+                        <label for="member">Non-Member</label><br>
 
                         <label for="message">Comments: *</label>
-                        <textarea name="message" id="message" value="" placeholder="Please enter your message here..." rows="4" cols="35" required></textarea><br />
+                        <textarea name="message" id="message" placeholder="Please enter your message here..." rows="4" cols="35" required></textarea><br>
 
                         <label for="attachment">Attachments: </label>
-                        <input type="file" name="attachment" id="attachment" value=""><br />
+                        <input type="file" name="attachment" id="attachment"><br>
 
                         <button type="submit" style="float: right;" onclick="send_form()">Send</button>
                     </fieldset>
@@ -87,11 +84,12 @@
         </main>
     </div>
 
+    <!-- Twitter feed (pushed to right on >800px screens) -->
     <div id="right-col">
         <aside>
             <a class="twitter-timeline" data-height="900" data-theme="dark"
                 href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
         </aside>
     </div>
 

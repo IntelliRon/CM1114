@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>Star Trek Society</title>
@@ -36,9 +36,11 @@
 
 <body style="padding: 10px;">
     <header style="margin-bottom: 10px;">
+        <!-- Logo image and webpage title -->
         <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
         <h1 id="title" style="display: inline">Star Trek Society</h1>
 
+        <!-- Login form -->
         <form onsubmit="return false;" style="display: inline; float: right">
             <label for="email">Email: </label>
             <input name="email" id="email" type="email" placeholder="email">
@@ -48,26 +50,19 @@
         </form>
     </header>
 
+    <!-- Navigation bar -->
     <nav style="width: 100%;">
         <ul style="padding: 0;">
-            <a href="index.html">
-                <li class="active">Home</li>
-            </a>
-            <a href="img_gallery.html">
-                <li>Gallery</li>
-            </a>
-            <a href="current_members.html">
-                <li>Current Members</li>
-            </a>
-            <a href="event_calendar.html">
-                <li>Events</li>
-            </a>
-            <a href="contact_us.html">
-                <li>Contact Us</li>
-            </a>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="ad_site.html">Shop</a></li>
         </ul>
     </nav>
 
+    <!-- Main content (pushed to left on >800px screens) -->
     <div id="left-col">
         <main style="margin-bottom: 10px;">
             <div>
@@ -86,7 +81,7 @@
                   </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
-                        <img class="d-block w-100 imageCarouselImg" src="images/enterprise_ncc1701.png">
+                        <img class="d-block w-100 imageCarouselImg" src="images/enterprise_ncc1701.png" alt="An image of the Enterprise NCC-1701 from Star Trek">
                         <div class="container">
                             <div class="carousel-caption text-start">
                               <p>The NCC1701 is the Enterprise in the original series</p>
@@ -94,11 +89,11 @@
                           </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img class="d-block w-100 imageCarouselImg" src="images/NX-01.png">
+                        <img class="d-block w-100 imageCarouselImg" src="images/NX-01.png" alt="An image of the Enterprise NX-01 from Star Trek: Enterprise">
                     </div>
 
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img class="d-block w-100 imageCarouselImg" src="images/star_trek_convention.png">
+                        <img class="d-block w-100 imageCarouselImg" src="images/star_trek_convention.png" alt="An image of the official Star Trek convention">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel"
@@ -116,11 +111,12 @@
         </main>
     </div>
 
+    <!-- Twitter feed (pushed to right on >800px screens) -->
     <div id="right-col">
         <aside style="margin-bottom: 10px;">
             <a class="twitter-timeline" data-height="700" data-theme="dark"
                 href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
         </aside>
     </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>Star Trek Society</title>
@@ -21,31 +21,25 @@
 </head>
 
 <body>
+    <!-- Logo image and webpage title -->
     <header>
         <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
         <h1 id="title">Star Trek Society</h1>
     </header>
 
-    <nav>
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="img_gallery.html">
-                <li>Gallery</li>
-            </a>
-            <a href="current_members.html">
-                <li class="active">Current Members</li>
-            </a>
-            <a href="event_calendar.html">
-                <li>Events</li>
-            </a>
-            <a href="contact_us.html">
-                <li>Contact Us</li>
-            </a>
+    <!-- Navigation bar -->
+    <nav style="width: 100%;">
+        <ul style="padding: 0;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li class="active"><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="ad_site.html">Shop</a></li>
         </ul>
     </nav>
 
+    <!-- Main content (pushed to left on >800px screens) -->
     <div id="left-col">
         <main>
             <h2 style="align-self: center;">Our Members</h2>
@@ -56,27 +50,27 @@
                 <div class="row">
                     <div class="col-sm" style="text-align: center;">
                         <h5>Admiral</h5>
-                        <img src="images/members/Admiral_Josh_Robertson.png" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow: hidden" alt="Admiral Josh Robertson">
+                        <img src="images/members/Admiral_Josh_Robertson.png" class="rounded-circle massie-hovering" width="120" height="120" style="overflow: hidden" alt="Admiral Josh Robertson">
                         <h5>Josh Robertson</h5>
                     </div>
                     <div class="col-sm" style="text-align: center;">
                         <h5>Admiral</h5>
-                        <img src="images/members/Admiral_Robert_Miller.png" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow: hidden" alt="Admiral Robert Miller">
+                        <img src="images/members/Admiral_Robert_Miller.png" class="rounded-circle massie-hovering" width="120" height="120" style="overflow: hidden" alt="Admiral Robert Miller">
                         <h5>Robert Miller</h5>
                     </div>
                     <div class="col-sm" style="text-align: center;">
                         <h5>Captain</h5>
-                        <img src="images/members/Captain_Oliver_David.png" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow: hidden" alt="Captain Oliver David">
+                        <img src="images/members/Captain_Oliver_David.png" class="rounded-circle massie-hovering" width="120" height="120" style="overflow: hidden" alt="Captain Oliver David">
                         <h5>Oliver David</h5>
                     </div>
                     <div class="col-sm" style="text-align: center;">
                         <h5>Captain</h5>
-                        <img src="images/members/Captain_Jenny_McFarlane.png" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow: hidden" alt="Captain Jenny McFarlane">
+                        <img src="images/members/Captain_Jenny_McFarlane.png" class="rounded-circle massie-hovering" width="120" height="120" style="overflow: hidden" alt="Captain Jenny McFarlane">
                         <h5>Jenny McFarlane</h5>
                     </div>
                     <div class="col-sm" style="text-align: center;">
                         <h5>Ensign</h5>
-                        <img src="images/members/Ensign_Sam_Baker.png" class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow: hidden" alt="Ensign Sam Baker">
+                        <img src="images/members/Ensign_Sam_Baker.png" class="rounded-circle massie-hovering" width="120" height="120" style="overflow: hidden" alt="Ensign Sam Baker">
                         <h5>Sam Baker</h5>
                     </div>
                 </div>
@@ -84,11 +78,12 @@
         </main>
     </div>
 
+    <!-- Twitter feed (pushed to right on >800px screens) -->
     <div id="right-col">
         <aside>
             <a class="twitter-timeline" data-height="900" data-theme="dark"
                 href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
         </aside>
     </div>
 

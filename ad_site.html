@@ -1,98 +1,119 @@
-<html>
-    <head>
-        <title>Star Trek Society</title>
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Star Trek Society</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        <link rel='stylesheet' href='css/main.css'>
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    </head>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
-    <body>
-        <header>
-            <h1>Star Trek Society</h1>
-        </header>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website about a (fictional) Star Trek University Society at RGU.">
+    <meta name="keywords" content="Star Trek, University, RGU">
+    <meta name="author" content="Jaron Frerichs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li class="active"><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <script>
+        function send_form() {
+            document.getElementById('form_outcome').innerHTML = 'Form has been sent successfully!';
+        }
+    </script>
+</head>
 
-        <main>
-            <img src="images/ad_image.png" height="400px" alt="Image of the product">
-            <p>My description here</p>
+<body>
+    <!-- Logo image and webpage title -->
+    <header>
+        <a href="index.html"><img src="images/logo_50px.png" id="logo" alt="logo"></a>
+        <h1>Star Trek Society</h1>
+    </header>
 
-            <table>
-                <tr>
-                    <th>Product description</th>
-                </tr>
-            </table>
+    <!-- Navigation bar -->
+    <nav style="width: 100%;">
+        <ul style="padding: 0;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li class="active"><a href="ad_site.html">Shop</a></li>
+        </ul>
+    </nav>
 
-            <form>
+    <!-- Main content (pushed to left on >800px screens) -->
+    <div id="left-col">
+        <main style="margin-bottom: 10px;">
+            <!-- Product image and description -->
+            <div>
+                <img src="images/ad_image.png" height="300" alt="Image of the product" style="float: left; margin-bottom: 1%; margin-right: 1%">
+                <h2>Star Trek: TNG Combadge</h2>
+                <h3>£3.49</h3>
+                <p>A badge in the style of the combadges from "Star Trek: The Next Generation". It is made out of metal and built to last. The combadge is suitable to pin to any clothing item. The product comes with a lifetime guarantee against manufacturing defects.</p>
+            </div>
+
+            <!-- Order form -->
+            <form style="clear: both">
                 <fieldset>
                     <legend>Order Now</legend>
 
                     <label for="name">Name: </label>
-                    <input type="text" name="name" value="" placeholder="John Doe"> <br />
+                    <input type="text" name="name" id="name" value="" placeholder="John Doe" required> <br>
 
                     <label for="email">Email: </label>
-                    <input type="email" name="email" value="" placeholder="john.doe@example.com"> <br />
+                    <input type="email" name="email" id="email" value="" placeholder="john.doe@example.com" required> <br>
 
                     <label for="address">Address: </label>
-                    <textarea name="message" value="", placeholder="Please enter your address..." rows="4" cols="50"></textarea> <br />
+                    <textarea name="address" id="address" placeholder="Please enter your address..." rows="4"
+                        cols="50" required></textarea> <br>
 
-                    
-
+                    <button type="submit" onclick="send_form()">Order</button>
                 </fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!--
-                    <fieldset>
-                        <legend>Contact Us using the below form.</legend>
-
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value="" placeholder="John Doe"/> <br />
-
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" value="" placeholder="john.doe@example.com"/> <br />
-
-                        <label for="membership">Membership Status:</label>
-                        <input type="radio" name="membership" value="Member">Member
-                        <input type="radio" name="membership" value="Non-Member">Non-Member<br/>
-
-                        <label for="message">Comments: </label>
-                        <textarea name="message" value="" placeholder="Please enter your message here..." rows="4" cols="50"></textarea><br />
-
-                        <label for="attachment">Attachments:</label>
-                        <input type="file" name="attachment" value="">
-                    </fieldset>     
-                -->
             </form>
+
+            <div>
+                <p id="form_outcome"></p>
+            </div>
+
+            <!-- Extensive product info -->
+            <table>
+                <tr>
+                    <th colspan="2">Product details</th>
+                </tr>
+                <tr>
+                    <td>Product Dimensions</td>
+                    <td>2.5 x 0.7 x 2.5 cm</td>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>Metal</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>approx. 23g</td>
+                </tr>
+            </table>
+
+            <p style="font-size: 14px">Warning: Please note that this item may not be suitable for small children, as it could present a choking hazard due to it's size.</p>
         </main>
+    </div>
 
-        <aside> </aside>
+    <!-- Twitter feed (pushed to right on >800px screens) -->
+    <div id="right-col">
+        <aside style="margin-bottom: 10px;">
+            <a class="twitter-timeline" data-height="700" data-theme="dark"
+                href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </aside>
+    </div>
 
-        <footer>
-            <p>&copy; Jaron Frerichs</p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy; Jaron Frerichs</p>
+    </footer>
+</body>
+
 </html>
