@@ -32,5 +32,7 @@ function removeHoverImage(event) {
 
 for (e of document.getElementsByClassName("galleryImg")) {
     e.addEventListener("mouseover", hoverImage);
+    e.addEventListener("focus", hoverImage);
     e.addEventListener("mouseout", removeHoverImage);
+    e.addEventListener("focusout", removeHoverImage);
 }

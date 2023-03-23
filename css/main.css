@@ -270,12 +270,12 @@ input::file-selector-button, button[type="submit"] {
         margin-bottom: 10px;
     }
 
-    #gallery div:hover, #gallery div img:hover {
+    #gallery div:hover, #gallery div img:hover, #gallery div:focus, #gallery div img:focus {
         width: calc(30% + 10px);
         height: 210px;
     }
 
-    #gallery div img:hover {
+    #gallery div img:hover, #gallery div img:focus {
         margin-right: 0;
         margin-bottom: 0;
         transition: 0.4s ease-in-out;
