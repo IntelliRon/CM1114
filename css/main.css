@@ -7,6 +7,10 @@ body {
     color: white;
 }
 
+a {
+    color: white;
+}
+
 header {
     background-color: hsl(0, 0%, 43%);
     border-top-left-radius: 10px;
@@ -218,6 +222,27 @@ input::file-selector-button, button[type="submit"] {
     width: 100%;
     margin: auto;
     height: 500px;
+}
+
+/* Remove the default link styles */
+.memberPageLink {
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.memberPageLink {
+    transition: 0.2s ease-in-out;
+    filter:drop-shadow(0 0 2px rgba(0, 0, 0, .7));
+}
+
+.dropShadow {
+    filter:drop-shadow(0 0 2px rgba(0, 0, 0, .7));
+}
+
+.memberPageLink:hover {
+    transition: 0.2s ease-in-out;
+    filter:drop-shadow(0 0 6px rgba(0, 0, 0, .7));
 }
 
 
