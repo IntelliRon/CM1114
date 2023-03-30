@@ -97,6 +97,16 @@ table {
 table td, table th {
     border: 0.5px solid #000011;
     text-align: center;
+    padding: 5px;
+}
+
+table td {
+    width: 200px;
+    font-size: 10pt;
+}
+
+th.weeks {
+    width: 34px;
 }
 
 table tr:nth-child(even) {

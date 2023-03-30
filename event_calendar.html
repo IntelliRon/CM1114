@@ -18,6 +18,23 @@
     <meta name="keywords" content="Star Trek, University, RGU">
     <meta name="author" content="Jaron Frerichs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function submit_event() {
+            var title = document.forms["event"]["event_title"].value;
+            var date = document.forms["event"]["event_date"].value;
+            
+            if (title == "") {
+                alert("An event must have a title!");
+            } else {
+                if (date.length == 0) {
+                    alert("An event must have a date!");
+                } else {
+                    alert("Event submitted! The society will contact you soon!");
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -56,7 +73,7 @@
                 </tr>
 
                 <tr>
-                    <th>W1</th>
+                    <th class="weeks">W1</th>
                     <td></td>
                     <td></td>
                     <td>Meet & Greet<br><br>In-person<br>Clubhouse</td>
@@ -67,7 +84,7 @@
                 </tr>
 
                 <tr>
-                    <th>W2</th>
+                    <th class="weeks">W2</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -78,7 +95,7 @@
                 </tr>
 
                 <tr>
-                    <th>W3</th>
+                    <th class="weeks">W3</th>
                     <td></td>
                     <td>Acting course<br>(Confirm attendance)<br>In-person<br>RGU School of Acting</td>
                     <td></td>
@@ -89,7 +106,7 @@
                 </tr>
 
                 <tr>
-                    <th>W4</th>
+                    <th class="weeks">W4</th>
                     <td></td>
                     <td></td>
                     <td>Battle of (TBC)<br>Re-enactment<br>In-person<br>Location TBC</td>
@@ -100,7 +117,7 @@
                 </tr>
 
                 <tr>
-                    <th>W5</th>
+                    <th class="weeks">W5</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -111,7 +128,7 @@
                 </tr>
 
                 <tr>
-                    <th>W6</th>
+                    <th class="weeks">W6</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -122,7 +139,7 @@
                 </tr>
 
                 <tr>
-                    <th>W7</th>
+                    <th class="weeks">W7</th>
                     <td>Vulcan Peace Convention<br><br>In-person<br>TECA</td>
                     <td></td>
                     <td></td>
@@ -133,7 +150,7 @@
                 </tr>
 
                 <tr>
-                    <th>W8</th>
+                    <th class="weeks">W8</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -144,7 +161,7 @@
                 </tr>
 
                 <tr>
-                    <th>W9</th>
+                    <th class="weeks">W9</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -155,17 +172,17 @@
                 </tr>
 
                 <tr>
-                    <th>W10</th>
+                    <th class="weeks">W10</th>
                     <td colspan="7"><br>Society is on break<br><br></td>
                 </tr>
 
                 <tr>
-                    <th>W11</th>
+                    <th class="weeks">W11</th>
                     <td colspan="7"><br>Society is on break<br><br></td>
                 </tr>
 
                 <tr>
-                    <th>W12</th>
+                    <th class="weeks">W12</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -175,6 +192,17 @@
                     <td>End of Semester drinks<br><br>In-person<br>Pub (TBC W9)</td>
                 </tr>
             </table>
+
+            <p>Want to recommend an event? Tell us below!</p>
+            <form name="events">
+                <label for="event_title">Event Title: </label>
+                <input type="text" placeholder="Enter a title..." name="event_title" id="event_title"><br>
+
+                <label for="event_date">Date: </label>
+                <input type="date" name="event_date"><br>
+
+                <button onclick="submit_event">Submit Event</button>
+            </form>
         </main>
     </div>
 
