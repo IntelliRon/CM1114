@@ -30,7 +30,10 @@ h3 {
     font-size: 24pt;
 }
 
-p, label, input, form {
+p,
+label,
+input,
+form {
     font-size: 16pt;
 }
 
@@ -94,7 +97,8 @@ table {
     width: 100%;
 }
 
-table td, table th {
+table td,
+table th {
     border: 0.5px solid #000011;
     text-align: center;
     padding: 5px;
@@ -122,23 +126,34 @@ table th {
 }
 
 /* Add padding to all semantic elements */
-header, nav, main, aside, footer {
+header,
+nav,
+main,
+aside,
+footer {
     padding: 10px;
 }
 
 /* Style the form */
-form label, form legend {
+form label,
+form legend {
     color: white;
     vertical-align: top;
 }
 
-form input[type="text"], form input[type="email"], form input[type="password"], form textarea {
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
     background: #2c2c2c;
     color: white;
     border-radius: 5px;
 }
 
-input::file-selector-button, button[type="submit"] {
+input::file-selector-button,
+button.submitForm,
+::-webkit-calendar-picker-indicator,
+input[type="date"] {
     border-radius: 5px;
     background-color: #2c2c2c;
     color: white;
@@ -180,16 +195,16 @@ input::file-selector-button, button[type="submit"] {
 /* Style the gallery to always have 2 images side-by-side */
 #gallery div {
     display: inline;
-    width: 48%;
+    width: 49%;
 }
 
 /* Add an appropriate cursor, as well as a single size to all images in the gallery */
 #gallery img {
     cursor: pointer;
     display: inline;
-    width: 48%;
+    width: 49%;
     object-fit: cover;
-    height: 200px;
+    height: 400px;
 }
 
 /* Style the full size image viewer */
@@ -226,6 +241,13 @@ input::file-selector-button, button[type="submit"] {
     min-height: 300px;
 }
 
+#asideImage {
+    float: left;
+    width: 150px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
 /* Make the image carousel images a single size */
 .imageCarouselImg {
     object-fit: cover;
@@ -243,16 +265,16 @@ input::file-selector-button, button[type="submit"] {
 
 .memberPageLink {
     transition: 0.2s ease-in-out;
-    filter:drop-shadow(0 0 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .7));
 }
 
 .dropShadow {
-    filter:drop-shadow(0 0 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .7));
 }
 
 .memberPageLink:hover {
     transition: 0.2s ease-in-out;
-    filter:drop-shadow(0 0 6px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, .7));
 }
 
 
@@ -282,9 +304,26 @@ input::file-selector-button, button[type="submit"] {
     }
 }
 
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    /* Make all images in the gallery small enough to fit 3 per row */
+    #gallery div,
+    #gallery div img {
+        width: 31% !important;
+    }
+
+    #gallery div:hover,
+    #gallery div img:hover,
+    #gallery div:focus,
+    #gallery div img:focus {
+        width: calc(31% + 10px) !important;
+        height: 410px !important;
+    }
+}
+
 
 /* Only execute when screen is at least 800px wide */
 @media screen and (min-width: 800px) {
+
     /* Make the nav go in one line */
     nav ul {
         display: inline-block;
@@ -315,9 +354,10 @@ input::file-selector-button, button[type="submit"] {
         min-width: 300px;
     }
 
-    /* Make all images in the gallery small enough to fit 3 per row */
-    #gallery div, #gallery div img {
-        width: 30%;
+    /* Make all images in the gallery small enough to fit 4 per row */
+    #gallery div,
+    #gallery div img {
+        width: 23.5%;
     }
 
     /* Add hover=enlarge functionality to gallery images */
@@ -327,15 +367,18 @@ input::file-selector-button, button[type="submit"] {
         margin-bottom: 10px;
     }
 
-    #gallery div:hover, #gallery div img:hover, #gallery div:focus, #gallery div img:focus {
-        width: calc(30% + 10px);
-        height: 210px;
+    #gallery div:hover,
+    #gallery div img:hover,
+    #gallery div:focus,
+    #gallery div img:focus {
+        width: calc(23.5% + 10px);
+        height: 410px;
     }
 
-    #gallery div img:hover, #gallery div img:focus {
+    #gallery div img:hover,
+    #gallery div img:focus {
         margin-right: 0;
         margin-bottom: 0;
         transition: 0.4s ease-in-out;
     }
 }
-

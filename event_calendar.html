@@ -20,10 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script>
-        function submit_event() {
+        function submit_event(e) {
+            e.preventDefault();
             var title = document.forms["event"]["event_title"].value;
             var date = document.forms["event"]["event_date"].value;
-            
+
             if (title == "") {
                 alert("An event must have a title!");
             } else {
@@ -57,163 +58,154 @@
         </ul>
     </nav>
 
-    <!-- Main content (pushed to left on >800px screens) -->
-    <div id="left-col">
-        <main>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
-                </tr>
+    <!-- Main content -->
+    <main>
+        <table>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W1</th>
-                    <td></td>
-                    <td></td>
-                    <td>Meet & Greet<br><br>In-person<br>Clubhouse</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W1</th>
+                <td></td>
+                <td></td>
+                <td>Meet & Greet<br><br>In-person<br>Clubhouse</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W2</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Star Trek: Enterprise<br>Viewing Marathon<br>In-person<br>Clubhouse</td>
-                    <td>Star Trek: Enterprise<br>Viewing Marathon<br>In-person<br>Clubhouse</td>
-                </tr>
+            <tr>
+                <th class="weeks">W2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Star Trek: Enterprise<br>Viewing Marathon<br>In-person<br>Clubhouse</td>
+                <td>Star Trek: Enterprise<br>Viewing Marathon<br>In-person<br>Clubhouse</td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W3</th>
-                    <td></td>
-                    <td>Acting course<br>(Confirm attendance)<br>In-person<br>RGU School of Acting</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W3</th>
+                <td></td>
+                <td>Acting course<br>(Confirm attendance)<br>In-person<br>RGU School of Acting</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W4</th>
-                    <td></td>
-                    <td></td>
-                    <td>Battle of (TBC)<br>Re-enactment<br>In-person<br>Location TBC</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W4</th>
+                <td></td>
+                <td></td>
+                <td>Battle of (TBC)<br>Re-enactment<br>In-person<br>Location TBC</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W5</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Star Trek: TNG<br>Viewing Marathon<br>In-person<br>Clubhouse</td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Star Trek: TNG<br>Viewing Marathon<br>In-person<br>Clubhouse</td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W6</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Drinks<br><br>In-person<br>Pub (TBC W5)</td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Drinks<br><br>In-person<br>Pub (TBC W5)</td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W7</th>
-                    <td>Vulcan Peace Convention<br><br>In-person<br>TECA</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W7</th>
+                <td>Vulcan Peace Convention<br><br>In-person<br>TECA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W8</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Best of Star Trek<br>Compilation Viewing<br><br>Online</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Best of Star Trek<br>Compilation Viewing<br><br>Online</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W9</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Best Series Debate<br>(+venue vote W12)<br><br>Online</td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tr>
+                <th class="weeks">W9</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Best Series Debate<br>(+venue vote W12)<br><br>Online</td>
+                <td></td>
+                <td></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W10</th>
-                    <td colspan="7"><br>Society is on break<br><br></td>
-                </tr>
+            <tr>
+                <th class="weeks">W10</th>
+                <td colspan="7"><br>Society is on break<br><br></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W11</th>
-                    <td colspan="7"><br>Society is on break<br><br></td>
-                </tr>
+            <tr>
+                <th class="weeks">W11</th>
+                <td colspan="7"><br>Society is on break<br><br></td>
+            </tr>
 
-                <tr>
-                    <th class="weeks">W12</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>End of Semester drinks<br><br>In-person<br>Pub (TBC W9)</td>
-                </tr>
-            </table>
+            <tr>
+                <th class="weeks">W12</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>End of Semester drinks<br><br>In-person<br>Pub (TBC W9)</td>
+            </tr>
+        </table>
 
-            <p>Want to recommend an event? Tell us below!</p>
-            <form name="events">
+        <p>Want to recommend an event? Tell us below!</p>
+        <form name="events">
+            <fieldset>
                 <label for="event_title">Event Title: </label>
                 <input type="text" placeholder="Enter a title..." name="event_title" id="event_title"><br>
 
                 <label for="event_date">Date: </label>
                 <input type="date" name="event_date"><br>
 
-                <button onclick="submit_event">Submit Event</button>
-            </form>
-        </main>
-    </div>
-
-    <!-- Twitter feed (pushed to right on >800px screens) -->
-    <div id="right-col">
-        <aside>
-            <a class="twitter-timeline" data-height="900" data-theme="dark"
-                href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-            <script async src="https://platform.twitter.com/widgets.js"></script>
-        </aside>
-    </div>
+                <button class="submitForm" onclick="submit_event">Submit Event</button>
+            </fieldset>
+        </form>
+    </main>
 
     <footer>
         <p>&copy; Jaron Frerichs</p>

@@ -46,71 +46,65 @@
         </ul>
     </nav>
 
-    <!-- Main content (pushed to left on >800px screens) -->
-    <div id="left-col">
-        <main style="margin-bottom: 10px;">
-            <!-- Product image and description -->
-            <div>
-                <img src="images/ad_image.png" height="300" alt="Image of the product" style="float: left; margin-bottom: 1%; margin-right: 1%">
-                <h2>Star Trek: TNG Combadge</h2>
-                <h3>£3.49</h3>
-                <p>A badge in the style of the combadges from "Star Trek: The Next Generation". It is made out of metal and built to last. The combadge is suitable to pin to any clothing item. The product comes with a lifetime guarantee against manufacturing defects.</p>
-            </div>
+    <!-- Main content -->
+    <main style="margin-bottom: 10px;">
+        <!-- Product image and description -->
+        <div>
+            <img src="images/ad_image.png" height="300" alt="Image of the product"
+                style="float: left; margin-bottom: 1%; margin-right: 1%">
+            <h2>Star Trek: TNG Combadge</h2>
+            <h3>£3.49</h3>
+            <p>A badge in the style of the combadges from "Star Trek: The Next Generation". It is made out of metal
+                and built to last. The combadge is suitable to pin to any clothing item. The product comes with a
+                lifetime guarantee against manufacturing defects.</p>
+        </div>
 
-            <!-- Order form -->
-            <form style="clear: both">
-                <fieldset>
-                    <legend>Order Now</legend>
+        <!-- Order form -->
+        <form style="clear: both">
+            <fieldset>
+                <legend>Order Now</legend>
 
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" value="" placeholder="John Doe" required> <br>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" value="" placeholder="John Doe" required> <br>
 
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" value="" placeholder="john.doe@example.com" required> <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" value="" placeholder="john.doe@example.com" required>
+                <br>
 
-                    <label for="address">Address: </label>
-                    <textarea name="address" id="address" placeholder="Please enter your address..." rows="4"
-                        cols="50" required></textarea> <br>
+                <label for="address">Address: </label>
+                <textarea name="address" id="address" placeholder="Please enter your address..." rows="4" cols="50"
+                    required></textarea> <br>
 
-                    <button type="submit" onclick="send_form()">Order</button>
-                </fieldset>
-            </form>
+                <button type="submit" onclick="send_form()">Order</button>
+            </fieldset>
+        </form>
 
-            <div>
-                <p id="form_outcome"></p>
-            </div>
+        <div>
+            <p id="form_outcome"></p>
+        </div>
 
-            <!-- Extensive product info -->
-            <table>
-                <tr>
-                    <th colspan="2">Product details</th>
-                </tr>
-                <tr>
-                    <td>Product Dimensions</td>
-                    <td>2.5 x 0.7 x 2.5 cm</td>
-                </tr>
-                <tr>
-                    <td>Material</td>
-                    <td>Metal</td>
-                </tr>
-                <tr>
-                    <td>Weight</td>
-                    <td>approx. 23g</td>
-                </tr>
-            </table>
+        <!-- Extensive product info -->
+        <table>
+            <tr>
+                <th colspan="2">Product details</th>
+            </tr>
+            <tr>
+                <td>Product Dimensions</td>
+                <td>2.5 x 0.7 x 2.5 cm</td>
+            </tr>
+            <tr>
+                <td>Material</td>
+                <td>Metal</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>approx. 23g</td>
+            </tr>
+        </table>
 
-            <p style="font-size: 14px">Warning: Please note that this item may not be suitable for small children, as it could present a choking hazard due to it's size.</p>
-        </main>
-    </div>
-
-    <!-- Twitter feed (pushed to right on >800px screens) -->
-    <div id="right-col">
-        <aside style="margin-bottom: 10px;">
-            <a class="twitter-timeline" data-height="700" data-theme="dark"
-                href="https://twitter.com/StarTrek?ref_src=twsrc%5Etfw">Tweets by StarTrek</a>
-            <script async src="https://platform.twitter.com/widgets.js"></script>
-        </aside>
-    </div>
+        <p style="font-size: 14px">Warning: Please note that this item may not be suitable for small children, as it
+            could present a choking hazard due to it's size.</p>
+    </main>
 
     <footer>
         <p>&copy; Jaron Frerichs</p>
