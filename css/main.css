@@ -5,6 +5,7 @@ body {
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    padding: 10px;
 }
 
 a {
@@ -167,14 +168,14 @@ input[type="date"] {
 /* ID modifiers */
 /* Make the logo align left next to title and 50px square */
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px;
+    min-height: 50px;
     float: left;
     margin: auto;
     margin-right: 10px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #title {
